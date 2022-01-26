@@ -1,6 +1,7 @@
 body {background-image: url("fondo.jpg");
       background-position: center;
-      font-family: "Lato", sans-serif}
+      font-family: "Lato", sans-serif;
+      background-size: cover}
 
 
 /*BARRA DE LA DERECHA DESPLEGABLE*/
