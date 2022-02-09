@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<head>
+  <title>Pagina Comic</title>
+  <link rel="icon" type="image/x-icon" href="icono.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="retos/retos.html">Panel de retos</a>
+  <a href="eventos/index1.html">Eventos</a>
+  <a href="#">Clientes</a>
+  <a href="normas.html">Normas del Juego</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
