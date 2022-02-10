@@ -1,0 +1,131 @@
+/*En el regalo de pedir salir en la misma flor tiene que estar la pagina web para que entre, luego en la pagina web tienen que haber retos lo que te falta pensar es como vas a planterarle los retos y los regalos, y cuando los puede hacer, si es cada tiempo o cada que.*/
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+h3 { color:#CAC40B;
+      text-align: center;
+    background-color: black}
+body {
+  margin: 0;
+}
+span {text-align: center;
+padding: 34px;}
+.header {
+  background-color: #818181;
+  padding: 20px;
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  padding-top: 30px ;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/*klk gaioloco*/
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+
+.overlay {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 200%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:white;
+}
+
+.container:hover .overlay {
+  opacity:80%;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 130px;
+  cursor: pointer;
+}
+
+.button3 {padding: 14px 40px;}
+
+
+/*shake shake shake
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+*/
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.imagen-cambiante {
+  display: block;
+  position: absolute;
+    height: 650px;
+    width: 420px;
+    background: url(carita.jpg)
+}
+
+.imagen-cambiante:hover {
+    background: url(culito.jpg)
+}
